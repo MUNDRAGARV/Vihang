@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="vihang">
+
+  <!-- Fuselage -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://vihang_description/meshes/body.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="grey">
+        <color rgba="0.7 0.7 0.7 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://vihang_description/meshes/body.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="10.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+               iyy="1.0" iyz="0.0"
+               izz="1.0"/>
+    </inertial>
+  </link>
+
+  <!-- Left Wing -->
+  <link name="wing_left">
+    <visual>
+      <geometry>
+        <mesh filename="package://vihang_description/meshes/wing.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://vihang_description/meshes/wing.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wing_left_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="wing_left"/>
+    <!-- Position left wing: adjust Y offset -->
+    <origin xyz="0.0 1.0 0.0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Right Wing -->
+  <link name="wing_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://vihang_description/meshes/wing.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://vihang_description/meshes/wing.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wing_right_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="wing_right"/>
+    <!-- Position right wing: adjust Y offset -->
+    <origin xyz="0.0 -1.0 0.0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Left Rotor (rotates around Z) -->
+  <link name="rotor_left">
+    <visual>
+      <geometry>
+        <mesh filename="package://vihang_description/meshes/rotor.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="0.8 0.8 0.8 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="rotor_left_joint" type="continuous">
+    <parent link="wing_left"/>
+    <child link="rotor_left"/>
+    <!-- Adjust X offset so rotor sits at end of wing -->
+    <origin xyz="1.0 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <!-- Right Rotor (rotates around Z) -->
+  <link name="rotor_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://vihang_description/meshes/rotor.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+  </link>
+
+  <joint name="rotor_right_joint" type="continuous">
+    <parent link="wing_right"/>
+    <child link="rotor_right"/>
+    <origin xyz="1.0 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+</robot>

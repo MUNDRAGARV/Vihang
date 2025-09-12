@@ -1,0 +1,127 @@
+[0.047s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'vihang_description']
+[0.047s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['vihang_description'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xe3ef88b092b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xe3ef88b08c20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xe3ef88b08c20>>, mixin_verb=('build',))
+[0.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.063s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.063s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.063s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.063s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.063s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/k/ros2_ws/Vihang/src'
+[0.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(vihang_description) by extensions ['ignore', 'ignore_ament_install']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(vihang_description) by extension 'ignore'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(vihang_description) by extension 'ignore_ament_install'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(vihang_description) by extensions ['colcon_pkg']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(vihang_description) by extension 'colcon_pkg'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(vihang_description) by extensions ['colcon_meta']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(vihang_description) by extension 'colcon_meta'
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(vihang_description) by extensions ['ros']
+[0.075s] Level 1:colcon.colcon_core.package_identification:_identify(vihang_description) by extension 'ros'
+[0.076s] DEBUG:colcon.colcon_core.package_identification:Package 'vihang_description' with type 'ros.ament_cmake' and name 'vihang_description'
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.091s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/k/ros2_ws/install
+[0.092s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 320 installed packages in /opt/ros/kilted
+[0.092s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.112s] Level 5:colcon.colcon_core.verb:set package 'vihang_description' build argument 'cmake_args' from command line to 'None'
+[0.112s] Level 5:colcon.colcon_core.verb:set package 'vihang_description' build argument 'cmake_target' from command line to 'None'
+[0.112s] Level 5:colcon.colcon_core.verb:set package 'vihang_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.112s] Level 5:colcon.colcon_core.verb:set package 'vihang_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.112s] Level 5:colcon.colcon_core.verb:set package 'vihang_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.112s] Level 5:colcon.colcon_core.verb:set package 'vihang_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.112s] Level 5:colcon.colcon_core.verb:set package 'vihang_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.112s] Level 5:colcon.colcon_core.verb:set package 'vihang_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.112s] Level 5:colcon.colcon_core.verb:set package 'vihang_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.112s] DEBUG:colcon.colcon_core.verb:Building package 'vihang_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/k/ros2_ws/Vihang/src/build/vihang_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/k/ros2_ws/Vihang/src/install/vihang_description', 'merge_install': False, 'path': '/home/k/ros2_ws/Vihang/src/vihang_description', 'symlink_install': False, 'test_result_base': None}
+[0.112s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.113s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.113s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/k/ros2_ws/Vihang/src/vihang_description' with build type 'ament_cmake'
+[0.113s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/k/ros2_ws/Vihang/src/vihang_description'
+[0.115s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.115s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.115s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/k/ros2_ws/Vihang/src/build/vihang_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/k/ros2_ws/Vihang/src/vihang_description -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/Vihang/src/install/vihang_description
+[0.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/k/ros2_ws/Vihang/src/build/vihang_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/k/ros2_ws/Vihang/src/vihang_description -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/Vihang/src/install/vihang_description
+[0.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/k/ros2_ws/Vihang/src/build/vihang_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/k/ros2_ws/Vihang/src/build/vihang_description -- -j4 -l4
+[0.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/k/ros2_ws/Vihang/src/build/vihang_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/k/ros2_ws/Vihang/src/build/vihang_description -- -j4 -l4
+[0.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/k/ros2_ws/Vihang/src/build/vihang_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/k/ros2_ws/Vihang/src/build/vihang_description
+[0.587s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vihang_description)
+[0.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/k/ros2_ws/Vihang/src/build/vihang_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/k/ros2_ws/Vihang/src/build/vihang_description
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description' for CMake module files
+[0.591s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description' for CMake config files
+[0.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('vihang_description', 'cmake_prefix_path')
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/hook/cmake_prefix_path.ps1'
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/hook/cmake_prefix_path.dsv'
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/hook/cmake_prefix_path.sh'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description/bin'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description/lib/pkgconfig/vihang_description.pc'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description/lib/python3.12/site-packages'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description/bin'
+[0.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.ps1'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.dsv'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.sh'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.bash'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.zsh'
+[0.594s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/k/ros2_ws/Vihang/src/install/vihang_description/share/colcon-core/packages/vihang_description)
+[0.595s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vihang_description)
+[0.595s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description' for CMake module files
+[0.595s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description' for CMake config files
+[0.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('vihang_description', 'cmake_prefix_path')
+[0.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/hook/cmake_prefix_path.ps1'
+[0.595s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/hook/cmake_prefix_path.dsv'
+[0.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/hook/cmake_prefix_path.sh'
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description/bin'
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description/lib/pkgconfig/vihang_description.pc'
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description/lib/python3.12/site-packages'
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/k/ros2_ws/Vihang/src/install/vihang_description/bin'
+[0.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.ps1'
+[0.596s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.dsv'
+[0.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.sh'
+[0.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.bash'
+[0.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/k/ros2_ws/Vihang/src/install/vihang_description/share/vihang_description/package.zsh'
+[0.597s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/k/ros2_ws/Vihang/src/install/vihang_description/share/colcon-core/packages/vihang_description)
+[0.597s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.597s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.597s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.597s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.602s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.602s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.602s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.612s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.612s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/k/ros2_ws/Vihang/src/install/local_setup.ps1'
+[0.612s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/k/ros2_ws/Vihang/src/install/_local_setup_util_ps1.py'
+[0.613s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/k/ros2_ws/Vihang/src/install/setup.ps1'
+[0.614s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/k/ros2_ws/Vihang/src/install/local_setup.sh'
+[0.614s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/k/ros2_ws/Vihang/src/install/_local_setup_util_sh.py'
+[0.615s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/k/ros2_ws/Vihang/src/install/setup.sh'
+[0.615s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/k/ros2_ws/Vihang/src/install/local_setup.bash'
+[0.615s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/k/ros2_ws/Vihang/src/install/setup.bash'
+[0.616s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/k/ros2_ws/Vihang/src/install/local_setup.zsh'
+[0.616s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/k/ros2_ws/Vihang/src/install/setup.zsh'

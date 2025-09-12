@@ -1,0 +1,4 @@
+source;share/vihang_description/local_setup.bash
+source;share/vihang_description/local_setup.dsv
+source;share/vihang_description/local_setup.sh
+source;share/vihang_description/local_setup.zsh
