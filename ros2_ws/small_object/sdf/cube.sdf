@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="cube">
+    <link name="body">
+      <inertial>
+        <mass>0.1</mass>  <!-- Mass in kg -->
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.1</size>  <!-- Size in meters -->
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.0 1.0 0.0 1.0</ambient>  <!-- Green color -->
+          <diffuse>0.0 1.0 0.0 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1.0</specular>
+        </material>
+      </visual>
+    </link>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+  </model>
+</sdf>
