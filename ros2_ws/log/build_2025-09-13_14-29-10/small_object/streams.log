@@ -1,0 +1,35 @@
+[0.005s] Invoking command in '/home/k/Vihang/ros2_ws/build/small_object': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/k/Vihang/ros2_ws/small_object -DCMAKE_INSTALL_PREFIX=/home/k/Vihang/ros2_ws/install/small_object
+[0.043s] -- The C compiler identification is GNU 13.3.0
+[0.079s] -- The CXX compiler identification is GNU 13.3.0
+[0.087s] -- Detecting C compiler ABI info
+[0.135s] -- Detecting C compiler ABI info - done
+[0.141s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.141s] -- Detecting C compile features
+[0.142s] -- Detecting C compile features - done
+[0.147s] -- Detecting CXX compiler ABI info
+[0.198s] -- Detecting CXX compiler ABI info - done
+[0.204s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.204s] -- Detecting CXX compile features
+[0.205s] -- Detecting CXX compile features - done
+[0.207s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.287s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.349s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.405s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.405s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.405s] -- Added test 'lint_cmake' to check CMake code style
+[0.406s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.406s] -- Added test 'xmllint' to check XML markup files
+[0.410s] -- Configuring done (0.4s)
+[0.410s] -- Generating done (0.0s)
+[0.410s] -- Build files have been written to: /home/k/Vihang/ros2_ws/build/small_object
+[0.414s] Invoked command in '/home/k/Vihang/ros2_ws/build/small_object' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/k/Vihang/ros2_ws/small_object -DCMAKE_INSTALL_PREFIX=/home/k/Vihang/ros2_ws/install/small_object
+[0.414s] Invoking command in '/home/k/Vihang/ros2_ws/build/small_object': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/k/Vihang/ros2_ws/build/small_object -- -j4 -l4
+[0.435s] Invoked command in '/home/k/Vihang/ros2_ws/build/small_object' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/k/Vihang/ros2_ws/build/small_object -- -j4 -l4
+[0.441s] Invoking command in '/home/k/Vihang/ros2_ws/build/small_object': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/k/Vihang/ros2_ws/build/small_object
+[0.445s] -- Install configuration: ""
+[0.445s] [31mCMake Error at cmake_install.cmake:46 (file):
+[0.445s]   file INSTALL cannot find "/home/k/Vihang/ros2_ws/small_object/models": No
+[0.445s]   such file or directory.
+[0.445s] 
+[0.445s] [0m
+[0.446s] Invoked command in '/home/k/Vihang/ros2_ws/build/small_object' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/k/Vihang/ros2_ws/build/small_object

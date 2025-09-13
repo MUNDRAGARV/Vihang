@@ -1,0 +1,27 @@
+[0.006s] Invoking command in '/home/k/Vihang/ros2_ws/build/small_object': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/k/Vihang/ros2_ws/build/small_object -- -j4 -l4
+[0.029s] Invoked command in '/home/k/Vihang/ros2_ws/build/small_object' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/k/Vihang/ros2_ws/build/small_object -- -j4 -l4
+[0.034s] Invoking command in '/home/k/Vihang/ros2_ws/build/small_object': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/k/Vihang/ros2_ws/build/small_object
+[0.041s] -- Install configuration: ""
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/models
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/sdf
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/sdf/cube.sdf
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/launch
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/launch/simulate_object_launch.py
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/worlds
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/worlds/simple.world
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/ament_index/resource_index/package_run_dependencies/small_object
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/ament_index/resource_index/parent_prefix_path/small_object
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/environment/ament_prefix_path.sh
+[0.041s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/environment/ament_prefix_path.dsv
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/environment/path.sh
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/environment/path.dsv
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/local_setup.bash
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/local_setup.sh
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/local_setup.zsh
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/local_setup.dsv
+[0.042s] -- Up-to-date: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/package.dsv
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/ament_index/resource_index/packages/small_object
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/cmake/small_objectConfig.cmake
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/cmake/small_objectConfig-version.cmake
+[0.042s] -- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/package.xml
+[0.043s] Invoked command in '/home/k/Vihang/ros2_ws/build/small_object' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/k/Vihang/ros2_ws/build/small_object

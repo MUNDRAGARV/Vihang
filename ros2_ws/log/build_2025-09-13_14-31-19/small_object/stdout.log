@@ -1,0 +1,23 @@
+-- Install configuration: ""
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/models
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/sdf
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/sdf/cube.sdf
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/launch
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/launch/simulate_object_launch.py
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/worlds
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/worlds/simple.world
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/ament_index/resource_index/package_run_dependencies/small_object
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/ament_index/resource_index/parent_prefix_path/small_object
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/environment/ament_prefix_path.sh
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/environment/ament_prefix_path.dsv
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/environment/path.sh
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/environment/path.dsv
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/local_setup.bash
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/local_setup.sh
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/local_setup.zsh
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/local_setup.dsv
+-- Up-to-date: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/package.dsv
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/ament_index/resource_index/packages/small_object
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/cmake/small_objectConfig.cmake
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/cmake/small_objectConfig-version.cmake
+-- Installing: /home/k/Vihang/ros2_ws/install/small_object/share/small_object/package.xml

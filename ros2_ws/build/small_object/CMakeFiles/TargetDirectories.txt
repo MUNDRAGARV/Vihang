@@ -1,0 +1,9 @@
+/home/k/Vihang/ros2_ws/build/small_object/CMakeFiles/uninstall.dir
+/home/k/Vihang/ros2_ws/build/small_object/CMakeFiles/small_object_uninstall.dir
+/home/k/Vihang/ros2_ws/build/small_object/CMakeFiles/test.dir
+/home/k/Vihang/ros2_ws/build/small_object/CMakeFiles/edit_cache.dir
+/home/k/Vihang/ros2_ws/build/small_object/CMakeFiles/rebuild_cache.dir
+/home/k/Vihang/ros2_ws/build/small_object/CMakeFiles/list_install_components.dir
+/home/k/Vihang/ros2_ws/build/small_object/CMakeFiles/install.dir
+/home/k/Vihang/ros2_ws/build/small_object/CMakeFiles/install/local.dir
+/home/k/Vihang/ros2_ws/build/small_object/CMakeFiles/install/strip.dir
