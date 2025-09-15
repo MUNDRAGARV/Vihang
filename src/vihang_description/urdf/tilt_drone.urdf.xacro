@@ -47,6 +47,12 @@
   <!-- Right Rear Motor Assembly -->
   <xacro:motor_assembly prefix="right_rear" wing_prefix="right" x_pos="${rear_motor_x}"/>
 
+  <!-- Add ROS2 Control -->
+  <xacro:simple_tilt_rotor_control 
+    motor1="front_left" 
+    motor2="rear_left" 
+    motor3="front_right" 
+    motor4="rear_right"/>
   <!-- Sensors -->
   <xacro:imu_sensor parent_link="base_link"/>
   <xacro:gps_sensor parent_link="base_link"/>

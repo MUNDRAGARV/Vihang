@@ -100,4 +100,184 @@
     <xacro:propeller prefix="${prefix}" motor_prefix="${prefix}"/>
   </xacro:macro>
 
+  <!-- ROS2 Control Macro for Tilt Rotor System -->
+  <xacro:macro name="tilt_rotor_ros2_control" params="motor_prefixes">
+    <ros2_control name="TiltRotorSystem" type="system">
+      <hardware>
+        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+      </hardware>
+      
+      <!-- Iterate through motor prefixes and create controls for each -->
+      <xacro:property name="motor_list" value="${motor_prefixes.split(',')}"/>
+      <xacro:macro name="create_motor_control" params="motor_prefix">
+        <!-- Tilt Joint Control (Position Control) -->
+        <joint name="${motor_prefix}_tilt_joint">
+          <command_interface name="position">
+            <param name="min">${tilt_limit_lower}</param>
+            <param name="max">${tilt_limit_upper}</param>
+          </command_interface>
+          <state_interface name="position">
+            <param name="initial_value">0.0</param>
+          </state_interface>
+          <state_interface name="velocity"/>
+          <state_interface name="effort"/>
+        </joint>
+        
+        <!-- Propeller Joint Control (Velocity Control) -->
+        <joint name="${motor_prefix}_prop_joint">
+          <command_interface name="velocity">
+            <param name="min">-100.0</param>  <!-- Max reverse RPM -->
+            <param name="max">100.0</param>   <!-- Max forward RPM -->
+          </command_interface>
+          <state_interface name="position"/>
+          <state_interface name="velocity">
+            <param name="initial_value">0.0</param>
+          </state_interface>
+        </joint>
+      </xacro:macro>
+      
+      <!-- Apply control configuration to each motor -->
+      <xacro:macro name="apply_controls" params="*motor_list">
+        <xacro:if value="${len(motor_list) > 0}">
+          <xacro:create_motor_control motor_prefix="${motor_list[0]}"/>
+          <xacro:if value="${len(motor_list) > 1}">
+            <xacro:apply_controls>
+              <xacro:property name="motor_list" value="${motor_list[1:]}"/>
+            </xacro:apply_controls>
+          </xacro:if>
+        </xacro:if>
+      </xacro:macro>
+      
+      <!-- Manual definition for common tilt rotor configurations -->
+      <!-- You'll need to uncomment and modify based on your specific motor setup -->
+      <!--
+      <xacro:create_motor_control motor_prefix="front_left"/>
+      <xacro:create_motor_control motor_prefix="front_right"/>
+      <xacro:create_motor_control motor_prefix="rear_left"/>
+      <xacro:create_motor_control motor_prefix="rear_right"/>
+      -->
+    </ros2_control>
+    
+    <!-- Gazebo ROS2 Control Plugin -->
+    <gazebo>
+      <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+        <robot_param>robot_description</robot_param>
+        <robot_param_node>robot_state_publisher</robot_param_node>
+        <parameters>$(find tilt_drone)/config/tilt_rotor_controllers.yaml</parameters>
+        <control_period>0.01</control_period> <!-- 100Hz -->
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+
+  <!-- Simplified ROS2 Control Macro for specific motors -->
+  <xacro:macro name="simple_tilt_rotor_control" params="motor1 motor2 motor3 motor4">
+    <ros2_control name="TiltRotorSystem" type="system">
+      <hardware>
+        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+      </hardware>
+      
+      <!-- Motor 1 Controls -->
+      <joint name="${motor1}_tilt_joint">
+        <command_interface name="position">
+          <param name="min">${tilt_limit_lower}</param>
+          <param name="max">${tilt_limit_upper}</param>
+        </command_interface>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${motor1}_prop_joint">
+        <command_interface name="velocity">
+          <param name="min">-100.0</param>
+          <param name="max">100.0</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+      </joint>
+      
+      <!-- Motor 2 Controls -->
+      <joint name="${motor2}_tilt_joint">
+        <command_interface name="position">
+          <param name="min">${tilt_limit_lower}</param>
+          <param name="max">${tilt_limit_upper}</param>
+        </command_interface>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${motor2}_prop_joint">
+        <command_interface name="velocity">
+          <param name="min">-100.0</param>
+          <param name="max">100.0</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+      </joint>
+      
+      <!-- Motor 3 Controls -->
+      <joint name="${motor3}_tilt_joint">
+        <command_interface name="position">
+          <param name="min">${tilt_limit_lower}</param>
+          <param name="max">${tilt_limit_upper}</param>
+        </command_interface>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${motor3}_prop_joint">
+        <command_interface name="velocity">
+          <param name="min">-100.0</param>
+          <param name="max">100.0</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+      </joint>
+      
+      <!-- Motor 4 Controls -->
+      <joint name="${motor4}_tilt_joint">
+        <command_interface name="position">
+          <param name="min">${tilt_limit_lower}</param>
+          <param name="max">${tilt_limit_upper}</param>
+        </command_interface>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${motor4}_prop_joint">
+        <command_interface name="velocity">
+          <param name="min">-100.0</param>
+          <param name="max">100.0</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+      </joint>
+    </ros2_control>
+    
+    <!-- Gazebo ROS2 Control Plugin -->
+    <gazebo>
+      <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+        <robot_param>robot_description</robot_param>
+        <robot_param_node>robot_state_publisher</robot_param_node>
+        <parameters>$(find tilt_drone)/config/tilt_rotor_controllers.yaml</parameters>
+        <control_period>0.01</control_period>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+
 </robot>
